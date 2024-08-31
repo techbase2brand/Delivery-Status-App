@@ -739,8 +739,8 @@ const DeliveryConfirmationScreen = () => {
                                 <Text style={styles.buttonText}>Clear Signature</Text>
                             </TouchableOpacity>
                             <TouchableOpacity style={!isPenApplied ? styles.disableButton : styles.button}
-                                onPress={() => { handleOK }}
-                                // onPress={() => { ref.current.readSignature(); handleOK }}
+                                // onPress={() => { handleOK }}
+                                onPress={() => { ref.current.readSignature(); handleOK }}
                                 disabled={!isPenApplied}>
                                 <Text style={[styles.buttonText, !isPenApplied ? { color: "#737272" } : { color: "white" }]}>Next</Text>
                             </TouchableOpacity>
